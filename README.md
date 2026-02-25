@@ -1,7 +1,7 @@
 # 🚀 Desafio Fullstack - Sistema de Gerenciamento
 
 ### 📝 Descrição
-Este projeto é uma aplicação completa (Fullstack) desenvolvida para o desafio técnico da **AVMB**. O sistema consiste em uma API robusta em Node.js, uma interface interativa em Angular e persistência de dados em MySQL. A arquitetura foi totalmente containerizada com Docker para garantir que o ambiente rode de forma idêntica em qualquer máquina.
+Este projeto é uma aplicação completa (Fullstack) desenvolvida para o desafio técnico da **AVMB**. O sistema consiste em uma API robusta em Node.js, uma interface interativa e persistência de dados em MySQL. A arquitetura foi totalmente containerizada com Docker para garantir que o ambiente rode de forma idêntica em qualquer máquina.
 
 **Principais funcionalidades:**
 * Autenticação de usuários via JWT (JSON Web Token).
@@ -59,7 +59,7 @@ Você não precisa instalar Node.js ou MySQL localmente, apenas ter o **Docker**
 │   │   └── server.js     # Inicialização do servidor
 │   └── Dockerfile        # Configuração da imagem Node.js
 ├── frontend/
-│   ├── src/              # Componentes e serviços Angular
+│   ├── src/              # Componentes e serviços
 │   └── Dockerfile        # Configuração da imagem com Nginx
 └── docker-compose.yml    # Orquestração MySQL, API e Web
 
