@@ -211,24 +211,7 @@ describe('alunoController.importar', () => {
   });
 });
 ```
-
-## Troubleshooting
-
-| Problema | Solução |
-|----------|---------|
-| `Cannot find module` | Verificar path dos imports |
-| `jest.mock not working` | jest.mock() deve vir ANTES de require() |
-| `Timeout` | Aumentar timeout: `jest.setTimeout(10000)` |
-| `Mock não retorna valor` | Use `.mockReturnValue()` ou `.mockResolvedValue()` |
-
-## Próximos Passos
-
-1. Execute coverage: `npm run test:coverage`
-2. Vise cobertura >80%
-3. Teste todos endpoints (success + error)
-4. Teste validações de autorização
-5. Teste casos edge case
-
 ---
 
 **Lembre-se:** Testes bons = código confiável + refatoração segura! 🚀
+
