@@ -1,0 +1,59 @@
+services:
+  mysql_db:
+    image: mysql:8.0
+    container_name: desafio_mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: desafio_fullstack
+      MYSQL_ROOT_PASSWORD: 12345
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+    networks:
+      - desafio-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: desafio_backend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mysql_db
+      DB_USER: root
+      DB_PASSWORD: 12345
+      DB_NAME: desafio_fullstack
+      DB_PORT: 3306
+    depends_on:
+      mysql_db:
+        condition: service_healthy
+    volumes:
+      - ./backend/uploads:/app/uploads
+    networks:
+      - desafio-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: desafio_frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - desafio-network
+
+volumes:
+  mysql_data:
+
+networks:
+  desafio-network:
