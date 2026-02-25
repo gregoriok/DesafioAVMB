@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comprovante>
+  <aluno>
+    <nome>Gregorio Kessler</nome>
+    <cpf>029.368.970-92</cpf>
+  </aluno>
+  <curso>
+    <nome>Sistemas de Informação</nome>
+    <codigo>SI001</codigo>
+  </curso>
+  <validacao>
+    <codigo>6870c3e78be017ffc2df6a660998d59548009a52b4af4297f2883c71b5d51ada</codigo>
+    <url_consulta>undefined/validar/6870c3e78be017ffc2df6a660998d59548009a52b4af4297f2883c71b5d51ada</url_consulta>
+  </validacao>
+</comprovante>

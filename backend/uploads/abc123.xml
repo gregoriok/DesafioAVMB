@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comprovante>
+  <aluno>
+    <nome>João Silva</nome>
+    <cpf>12345678901</cpf>
+  </aluno>
+  <curso>
+    <nome>Engenharia</nome>
+    <codigo>ENG001</codigo>
+  </curso>
+  <validacao>
+    <codigo>abc123</codigo>
+    <url_consulta>undefined/validar/abc123</url_consulta>
+  </validacao>
+</comprovante>

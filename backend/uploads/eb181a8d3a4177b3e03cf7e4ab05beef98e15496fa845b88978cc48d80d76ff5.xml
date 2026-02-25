@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comprovante>
+  <aluno>
+    <nome>Eliane Kessler</nome>
+    <cpf>453.838.710-04</cpf>
+  </aluno>
+  <curso>
+    <nome>Administração</nome>
+    <codigo>ADM001</codigo>
+  </curso>
+  <validacao>
+    <codigo>eb181a8d3a4177b3e03cf7e4ab05beef98e15496fa845b88978cc48d80d76ff5</codigo>
+    <url_consulta>undefined/validar/eb181a8d3a4177b3e03cf7e4ab05beef98e15496fa845b88978cc48d80d76ff5</url_consulta>
+  </validacao>
+</comprovante>

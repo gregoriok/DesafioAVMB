@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comprovante>
+  <aluno>
+    <nome>João</nome>
+    <cpf>123</cpf>
+  </aluno>
+  <curso>
+    <nome>Medicina</nome>
+    <codigo>MED001</codigo>
+  </curso>
+  <validacao>
+    <codigo>meu_hash_123</codigo>
+    <url_consulta>undefined/validar/meu_hash_123</url_consulta>
+  </validacao>
+</comprovante>
