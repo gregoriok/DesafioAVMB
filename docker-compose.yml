@@ -31,6 +31,7 @@ services:
       DB_PASSWORD: 12345
       DB_NAME: desafio_fullstack
       DB_PORT: 3306
+      JWT_SECRET: chave_jwt
     depends_on:
       mysql_db:
         condition: service_healthy
