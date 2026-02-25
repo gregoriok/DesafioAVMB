@@ -62,3 +62,7 @@ Você não precisa instalar Node.js ou MySQL localmente, apenas ter o **Docker**
 │   ├── src/              # Componentes e serviços Angular
 │   └── Dockerfile        # Configuração da imagem com Nginx
 └── docker-compose.yml    # Orquestração MySQL, API e Web
+
+```
+
+### Projeto Possui Testes automatizados gerados com auxilio de IA
